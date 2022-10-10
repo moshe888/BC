@@ -147,6 +147,10 @@ li {
 .game_bord button {
     background-color: blue;
     color: ghostwhite;
+    border-radius: 10px;
+}
+.game_bord button:hover{
+    background-color: rgb(125, 125, 235);
 }
 
 .shop-item {
@@ -161,6 +165,7 @@ li {
     font-size: 1em;
     color: #333;
     margin-bottom: 3px;
+    width: 160px;
 }
 
 .shop-item-image {
@@ -220,14 +225,19 @@ li {
     width: 35%;
 }
 
-.cart-row img {
+.cart-item-image{
     width: 45px;
     height: auto;
     border-radius: 10px;
     margin-right: 5px;
 }
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
 
-.cart-row button {
+.btn-remove {
     color: white;
     background-color: rgb(79, 79, 247);
     border: none;
@@ -237,11 +247,11 @@ li {
     width: 80px;
 }
 
-.cart-row button:hover {
+.btn-remove:hover {
     background-color: rgb(165, 165, 245);
 }
 
-.cart-row input {
+.cart-quantity-input {
     height: 34px;
     width: 50px;
     border-radius: 5px;
@@ -250,13 +260,13 @@ li {
     
 }
 /* .cart-row:last-child */
-.l{
+/* .l{
     border-bottom: 1px solid black;
     margin-bottom: 10px;
 }
 .l .cart-column {
     border: none;
-}
+} */
 .cart-total {
     text-align: end;
     margin-top: 10px;

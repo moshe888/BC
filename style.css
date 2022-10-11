@@ -70,6 +70,8 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 2em;
+    text-align: center;
+
 }
 
 .section-header {
@@ -86,12 +88,13 @@ body {
     margin: 25px;
 }
 
-footer {
+.main-footer {
     display: flex;
     align-items: center;
     background-color: #181733;
     /* color: white; */
     padding-bottom: 0%;
+    height: 100px;
 
 }
 
@@ -156,7 +159,7 @@ li {
 
 .shop-item {
     margin-right: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .shop-item-title {
@@ -167,9 +170,11 @@ li {
     color: #333;
     margin-bottom: 3px;
     width: 160px;
+    height: 50px;
 }
 
 .shop-item-image {
+    border-radius: 10px;
     height: 250;
     width: 160px;
 
@@ -305,7 +310,9 @@ li {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
-
+.container-total{
+     max-width: 700px;
+}
 
 
 

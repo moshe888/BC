@@ -1,16 +1,16 @@
  
 
-var cartItemContainer = document.querySelector('.cart-items')
-var cartRows = cartItemContainer.querySelectorAll('.cart-row')
-console.log(cartRows)
-var cartRow = cartRows[0]
-console.log(cartRow)
+// var cartItemContainer = document.querySelector('.cart-items')
+// var cartRows = cartItemContainer.querySelectorAll('.cart-row')
+// console.log(cartRows)
+// var cartRow = cartRows[0]
+// console.log(cartRow)
 
-var priceElement = cartRow.querySelector('.cart-price')
-var price = parseFloat(priceElement.innerText.replace('$', ''))
+// var priceElement = cartRow.querySelector('.cart-price')
+// var price = parseFloat(priceElement.innerText.replace('$', ''))
 
-console.log(priceElement)
-console.log(price)
+// console.log(priceElement)
+// console.log(price)
 
 
 

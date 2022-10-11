@@ -103,8 +103,7 @@ footer {
 }
 
 footer ul {
-    flex-grow: 2;
-    /*there is 2*/
+    flex-grow: 1;
     text-align: end;
     padding-right: 10%;
 

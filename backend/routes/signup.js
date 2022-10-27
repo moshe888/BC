@@ -2,15 +2,15 @@ const express = require("express")
 const signupRouter = express.Router();
 const User = require("../modles/Usre");
 
-signupRouter.post("/signup", async (req, res) => {
-    console.log(req.body.email)
+signupRouter.post('/signup', async (req, res,next) => {
+    console.log(req.body)
     if (!req.body)
         {
             return res.status(400).send("no valid")
         }
     const email = req.body.email
     const password = req.body.password
-    console.log(email,password,"kkkkkkkkkkkkkkkkkk")
+    console.log(password,"kkkkkkkkkkkkkkkkkk")
     if (!email || !password)
     {
 

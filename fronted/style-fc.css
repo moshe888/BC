@@ -14,7 +14,9 @@ body {
 
 
 }
-
+.navbar{
+    background-color: rgb(175, 175, 237);
+}
 .nav ul {
     margin: 0;
 }
@@ -49,7 +51,7 @@ body {
 .main-header {
     /* background-color: rgba(0, 0, 0, .6); */
     /* background-repeat: no-repeat; */
-
+    
     background-image: url("https://store.fcbarcelona.com/medias/Banner-Desktop.jpg?context=bWFzdGVyfHJvb3R8ODU2NTh8aW1hZ2UvanBlZ3xoNDYvaGExLzg5NTI1MTU0NjExNTAvQmFubmVyX0Rlc2t0b3AuanBnfGU4OTMwYTM0N2MyOTE5NDJhNTA5ZDNkMWU4MjU1ZDcxYmYxNDc4M2QxYWQ4ZmM0ZTlhZDM1NmVlNzZmYTkxNTU");
     /* background-image: url("images/fc_about.webp"); */
 

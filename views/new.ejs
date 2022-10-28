@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,78 +7,109 @@
     <script src="store.js" async></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Document</title>
-</head>
 <style>
-    .container{
-        max-width: 900px;
-        margin: 0 auto;
-        margin-left:300px;
-        margin-top: 5%;
+ body{
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: rgba(235, 235, 236, 0.39);
+ }
+ .container{
+    margin: 0 auto;
+         max-width: 900px;
+        padding: 77px;     
+      
+        
         
     padding: 0 2em;
-    text-align: center;
+    text-align:start;
+ 
 
     }
-</style>
-   
-   <body>
-       
-            <div class="container">
-                <div class="row">
-                         <div class="col-lg-9">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                        <h2>Add Product</h2>
+    .row-add{
+        margin-top: 10px;
+        align-items: center;
 
-                                        <form action="/new" method="POST">
-                                            <div class="form-group">
-                                                <label for="title">Title</label>
-                                                <input class="form-control" id="title" name="title">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="price">Price</label>
-                                                <input class="form-control" id="price" name="price">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Image URL</label>
-                                                <input class="form-control"  name="img">
-                                            </div>
-                                            <!-- <div class="form-group">
-                                                <label for="category">category</label>
-                                                <input class="form-control" id="category" name="category">
-                                            </div> -->
-                                            <div class="form-group">
 
-                                            <div class="col-auto my-1">
-                                                <label class="mr-sm-2" for="category">category</label>
-                                                <select class="custom-select mr-sm-2" id="category" name="category">
-                                                  <option selected>Choose...</option>
-                                                  <option value="1">Traning</option>
-                                                  <option value="2">Gifts and Accessories</option>
-                                                  <option value="3">Back to School</option>
-                                                </select>
-                                              </div>
-                                            </div>
-                                      
-                                            <button type="submit" class="btn btn-primary " style="margin-top: 6px;" >Submit</button>
-                                        </form>
-                                        <br>
-                                    </div>
-
-                                </div>
-                                <!-- /.row -->
-                        </div>
-                        <!-- /.col-lg-9 -->
-                </div>
-                <!-- /.row -->
-
-            </div>
-
-        
-            
-             
-            </body>
-            
-            </html>
+    }
  
+</style>
+
+    <title>Document</title>
+</head>
+<body>
+    
+        <dl><a href="/">  to store</a></dl>
+    
+    <h3>Admin page</h3>
+    <div class="list-group container">
+    
+        <a href="/new" class="list-group-item  "><b>Adding a product</b></a>
+        <a href="#" class="list-group-item  ">Remove a product</a>
+        <a href="#" class="list-group-item  "">Edit product</a>
+       </div>
+       <div class="container">
+        <div class="row row-add">
+                 <div class="col-lg-9">
+                         <div class="row">
+                            <div class="col-sm-12">
+                                <b>Enter product details:</b>
+
+                                <form action="/new" method="POST">
+                                    <div class="form-group">
+                                        <label for="title">Title</label>
+                                        <input class="form-control" id="title" name="title">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="price">Price</label>
+                                        <input class="form-control" id="price" name="price">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Image URL</label>
+                                        <input class="form-control"  name="img">
+                                    </div>
+                                    <!-- <div class="form-group">
+                                        <label for="category">category</label>
+                                        <input class="form-control" id="category" name="category">
+                                    </div> -->
+                                    <div class="form-group">
+
+                                    <div class="col-auto my-1">
+                                        <label class="mr-sm-2" for="category">category</label>
+                                        <select class="custom-select mr-sm-2" id="category" name="category">
+                                          <option selected>Choose...</option>
+                                          <option value="1">Traning</option>
+                                          <option value="2">Gifts and Accessories</option>
+                                          <option value="3">Back to School</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                              
+                                    <button type="submit" class="btn btn-primary " style="margin-top: 6px;" onclick="alert_()" >Submit</button>
+ 
+
+                                </form>
+                                <br>
+                            </div>
+
+                        </div>
+                        <!-- /.row -->
+                </div>
+                <!-- /.col-lg-9 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+ 
+    <!-- <form action="/new" method="get">
+     <button type="submit" class="btn btn-primary    ">Adding a product</button>
+    </form> -->
+<!-- <button type="submit" class="btn btn-primary    ">Price Update</button> -->
+
+    
+</body>
+<script>
+    function alert_() {
+      alert("The product has been successfully added!");
+    }
+    </script>
+</html>

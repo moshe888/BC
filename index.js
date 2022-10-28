@@ -16,8 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use(bodyParser.json())
-// app.use(cors())
+ // app.use(cors())
 app.use(signup)
 app.use(signin)
 app.use(new_)

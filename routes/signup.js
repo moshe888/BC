@@ -3,7 +3,7 @@ const signupRouter = express.Router();
 const User = require("../modles/Usre");
 
 signupRouter.get('/signup', async (req, res, next) => {
-    res.render("signin")
+    res.render("signup")
 })
 
 signupRouter.post('/signup', async (req, res,next) => {

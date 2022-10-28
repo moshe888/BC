@@ -2,7 +2,6 @@
 <html> 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- 
 <title> Login Page </title>
 <style> 
 Body {
@@ -37,40 +36,29 @@ button {
         background-color: black;
         border-radius: 30px;
     } 
- 
- 
-
- 
- 
-
- 
- 
-
- 
 </style> 
 
 
 </head>  
 <body>  
- 
-         <ul>
-             <li><a href="/"><h2>  to store</h2></a></li>
-         </ul>
-     
-      <center> <h1>signin  </h1> </center> 
-    <form action="/signin" method="post"> 
+    <ul>
+        <li><a href="/"><h2>  to store</h2></a></li>
+    </ul>
+    <center> <h1>   signup  </h1> </center> 
+    <form action="/signup" method="post"  >
         <div class="container"> 
             <label>Username : </label> 
             <input type="email" placeholder="Enter Username" name="email" required>
             <label>Password : </label> 
             <input type="password" placeholder="Enter Password" name="password" required>
             <button type="submit">Login</button> 
-            <p style="color: #393f81;">Don't have an account? <a href="/signup"
-                style="color: #393f81;">Register here</a></p>
+            <p style="color: #393f81;">you have an account? <a href="/signin"
+                style="color: #393f81;">login here</a></p>
+       
            
         </div> 
+        
     </form>   
- 
     
 </body>   
 </html>

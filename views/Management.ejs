@@ -11,19 +11,42 @@
  body{
     margin-top: 3%;
     margin-left: 3%;
-    background-color: honeydew;
+    background-color: rgba(235, 235, 236, 0.39);
  }
+ .container{
+    margin: 0 auto;
+         max-width: 900px;
+        padding: 77px;     
+      
+        
+        
+    padding: 0 2em;
+    text-align:start;
+ 
+
+    }
+    .row-add{
+        margin-top: 10px;
+        align-items: center;
+
+
+    }
+ 
 </style>
 
     <title>Document</title>
 </head>
 <body>
- 
-    <form action="/new" method="get">
-     <button type="submit" class="btn btn-primary    ">Adding a product</button>
-    </form>
-<button type="submit" class="btn btn-primary    ">Price Update</button>
-
+    <ul>
+        <dl><a href="/">  to store</a></dl>
+    </ul>
+    <h3>Admin page</h3>
+    <div class="list-group container">
     
+        <a href="/new" class="list-group-item  ">Adding a product</a>
+        <a href="#" class="list-group-item  ">Remove a product</a>
+        <a href="#" class="list-group-item  "">Edit product</a>
+       </div>
+       
 </body>
 </html>

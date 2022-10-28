@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    /* font-family: Raleway; */
-    color: #777;
+     color: #777;
 
 }
 
@@ -27,9 +26,9 @@ body {
 .sign button:hover{
     background:rgb(95, 94, 94);
 }
-.navbar{
+/* .navbar{
     background-color: rgb(175, 175, 237);
-}
+} */
 .nav ul {
     margin: 0;
 }
@@ -42,15 +41,13 @@ body {
     display: inline-block;
     padding: .5em;
 
-    /* color: white; */
-    text-decoration: none;
+     text-decoration: none;
 }
 
 .main-nav {
     text-align: center;
     font-size: 1.1em;
-    /* font-weight: lighter; */
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
+     border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
 
 .main-nav li {
@@ -205,9 +202,7 @@ section img {
 
 }
 
-li:first-child {
-    font-weight: bold;
-}
+ 
 
 li {
     display: inline-block;
@@ -238,12 +233,12 @@ li {
     color: #333;
     margin-bottom: 3px;
     width: 160px;
-    height: 70px;
+    height: 40px;
 }
 
 .shop-item-image {
     border-radius: 10px;
-    height: 250;
+    height: 220;
     width: 160px;
 
 }
@@ -262,6 +257,16 @@ li {
 .shop-items {
     display: flex;
     flex-wrap: wrap;
+}
+.shop-item-button{
+    background-color:rgb(255, 255, 255) ;
+    border: 0.04px solid  gainsboro;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+.shop-item-button:hover{
+    background-color: rgb(193, 189, 189);
 }
 
 .cart-row {

@@ -13,7 +13,7 @@
 // console.log(price)
 
 
-
+document.addEventListener('')
 
 
 

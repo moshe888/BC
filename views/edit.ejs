@@ -43,18 +43,18 @@
     <h3>Admin page</h3>
     <div class="list-group container">
     
-        <a href="/new" class="list-group-item  "><b>Adding a product</b></a>
+        <a href="/new" class="list-group-item  ">Adding a product</a>
         <a href="/new/remove" class="list-group-item  ">Remove a product</a>
-        <a href="/new/edit" class="list-group-item  "">Edit product</a>
+        <a href="/new/edit" class="list-group-item  ""><b>Edit product</b></a>
        </div>
        <div class="container">
         <div class="row row-add">
                  <div class="col-lg-9">
                          <div class="row">
                             <div class="col-sm-12">
-                                <b>Enter product details:</b>
+                                <b>Enter new price :</b>
 
-                                <form action="/new" method="POST">
+                                <form action="/new/edit" method="POST">
                                     <div class="form-group">
                                         <label for="title">Title</label>
                                         <input class="form-control" id="title" name="title">
@@ -63,14 +63,7 @@
                                         <label for="price">Price</label>
                                         <input class="form-control" id="price" name="price">
                                     </div>
-                                    <div class="form-group">
-                                        <label>Image URL</label>
-                                        <input class="form-control"  name="img">
-                                    </div>
-                                    <!-- <div class="form-group">
-                                        <label for="category">category</label>
-                                        <input class="form-control" id="category" name="category">
-                                    </div> -->
+                                   
                                     <div class="form-group">
 
                                     <div class="col-auto my-1">

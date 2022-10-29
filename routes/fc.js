@@ -16,6 +16,6 @@ fc.get('/about', async(req, res, next) => {
  
 fc.get('/', async(req, res, next) => {
     const products = await Product.find();
-       res.render("store4" , {   prods: products });
+       res.render("store6" , {   prods: products });//לוקחים קובץ ejs ומפעילים אותו ושולחים את המשתנים שנעבוד איתם 
     })
     module.exports = fc

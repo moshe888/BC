@@ -30,6 +30,9 @@ const start = async () => {
     try {
         await mongoose.connect(
             "mongodb://localhost:27017/fc",{useNewUrlParser:true}
+            // "mongodb+srv://moshe:228822@cluster0.eaaqo9b.mongodb.net/test" 
+
+
           );
          console.log("succsessfuly connected to mongodb");
          app.listen(4000, () => console.log("server listen on port 4000"));

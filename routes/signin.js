@@ -10,16 +10,9 @@ signinRouter.get("/signin", async (req, res) => {
 signinRouter.post("/signin", async (req, res) => {
     const email = req.body.email
     const password = req.body.password
-    // if (email == "1234" && password == "1234")
-    // {
-    //     return res.status(201).redirect("http://127.0.0.1:5555/fronted/store.html")
-    // }
+  
     const existingUser = await User.findOne({ "email": email, "password": password })
-
-    const findall = await User.find()
-
-    console.log(findall,"kkkkkkkkkkkkk",existingUser,email,password)
-
+ 
 
      if (existingUser) {
 

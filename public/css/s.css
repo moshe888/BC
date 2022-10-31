@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-     color: #777;
+     color: #03045e;
 
 }
 
@@ -19,7 +19,7 @@ body {
       
 }
 .sign button{
-    background-color: #525090;
+    background-color: #1f22d0;
     border-radius: 8px;
     font-size: 20px;
  
@@ -27,36 +27,55 @@ body {
 .sign button:hover{
     background:rgb(95, 94, 94);
 }
-/* .navbar{
-    background-color: rgb(175, 175, 237);
-} */
-.nav ul {
+@media  (max-width: 800px) {
+    .sign button {
+    font-size: 12px;
+    }
+  }
+
+.nav1 ul {
     margin: 0;
 }
 
-.nav li {
+.nav1 li {
     display: inline;
 }
 
-.nav a {
+.nav1 a {
     display: inline-block;
-    padding: .5em;
+    text-align: center;
+     padding: .5em;
     color: #b0b0b4;
 
      text-decoration: none;
 }
+@media  (max-width: 800px) {
+    .nav1 a{
+        display:block;
+        text-align: start;
+        padding: 0em;
+font-size: 10px;        
 
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-     border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
 
-.main-nav li {
-    padding: 0 5%;
-}
+    }
+  }
 
-.nav a:hover {
+
+
+    .nav1 {
+        text-align: center;
+        font-size: 1.1em;
+         border-bottom: 1px solid rgba(255, 255, 255, .3)
+    }
+    @media  (max-width: 800px) {
+        .nav1 {     
+            border-bottom:none
+        }
+    }
+.nav1 li {
+ }
+
+.nav1 a:hover {
     background-color: rgba(255, 255, 255, 0.3)
 }
 
@@ -69,13 +88,14 @@ body {
     /* background-color: rgba(0, 0, 0, .6); */
     /* background-repeat: no-repeat; */
     
-    background-image: url("https://store.fcbarcelona.com/medias/Banner-Desktop.jpg?context=bWFzdGVyfHJvb3R8ODU2NTh8aW1hZ2UvanBlZ3xoNDYvaGExLzg5NTI1MTU0NjExNTAvQmFubmVyX0Rlc2t0b3AuanBnfGU4OTMwYTM0N2MyOTE5NDJhNTA5ZDNkMWU4MjU1ZDcxYmYxNDc4M2QxYWQ4ZmM0ZTlhZDM1NmVlNzZmYTkxNTU");
-    /* background-image: url("images/fc_about.webp"); */
+    /* background-image: url("https://store.fcbarcelona.com/medias/Banner-Desktop.jpg?context=bWFzdGVyfHJvb3R8ODU2NTh8aW1hZ2UvanBlZ3xoNDYvaGExLzg5NTI1MTU0NjExNTAvQmFubmVyX0Rlc2t0b3AuanBnfGU4OTMwYTM0N2MyOTE5NDJhNTA5ZDNkMWU4MjU1ZDcxYmYxNDc4M2QxYWQ4ZmM0ZTlhZDM1NmVlNzZmYTkxNTU"); */
+    background-image: url("https://pbs.twimg.com/media/FWf6nzvX0AEnX6T?format=jpg&name=900x900");
     background-size:cover;
 
     margin-bottom: 2rem;
-    height: 350px;
+    height: 100%;
         background-repeat: no-repeat;
+        
 
 
 
@@ -83,7 +103,9 @@ body {
 @media  (max-width: 800px) {
     .main-header {
     background-size:contain;
-    height: 250px;
+    height: 100%;
+    margin-bottom: 0;
+
     }
   }
 
@@ -94,6 +116,7 @@ body {
     inset: 0;
   } */
 
+
 .main-h1 {
     margin: auto;
     width: 90%;
@@ -103,6 +126,13 @@ body {
     color: white;
 
 }
+  @media  (max-width: 800px) {
+    .main-h1 {
+        margin: 0;
+        padding-top: 10px;
+
+    }
+  }
 .btn-category{
     display:inline-flex;
  
@@ -176,8 +206,9 @@ video {
     background-color: #181733;
     /* color: white; */
     padding-bottom: 0%;
-    height: 100px;
-
+    height: 150px;
+    font-size: 14px;
+ 
 }
 
 .footer-h3 {
@@ -198,6 +229,8 @@ footer ul {
 footer li {
     display: inline-block;
     padding: 1em;
+    color: azure;
+
 
 
 }
@@ -209,7 +242,7 @@ footer li :hover {
 
 .nav-footer {
     display: inline-flex;
-    font-size: 10px;
+    font-size: px;
     vertical-align: text-bottom;
 }
 
@@ -253,8 +286,8 @@ li {
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 1em;
-    color: #333;
+    font-size: 0.8em;
+    color: #03045e;
     margin-bottom: 3px;
     width: 160px;
     height: 40px;
@@ -283,11 +316,13 @@ li {
     flex-wrap: wrap;
 }
 .shop-item-button{
-    background-color:rgb(255, 255, 255) ;
-    border: 0.04px solid  gainsboro;
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 10px;
+    background-color:#03045e ;
+    /* border: 0.04px solid  gainsboro; */
+    border-radius: 8px;
+    color: aliceblue;
+    /* font-size: 13px; */
+    /* padding: 10px; */
+    /* height: 7px; */
 }
 .shop-item-button:hover{
     background-color: rgb(193, 189, 189);
@@ -342,17 +377,16 @@ li {
 }
 
 .btn-remove {
-    color: white;
-    background-color: rgb(79, 79, 247);
-    border: none;
+      border: none;
     border-radius: .3em;
     font-weight: bold;
     height: 34px;
     width: 80px;
+    border-radius: 7px;
 }
 
 .btn-remove:hover {
-    background-color: rgb(165, 165, 245);
+    background-color: rgb(139, 139, 140);
 }
 
 .cart-quantity-input {
@@ -364,15 +398,7 @@ li {
 
 }
 
-/* .cart-row:last-child */
-/* .l{
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-}
-
-.l .cart-column {
-    border: none;
-} */
+ 
 
 .cart-total {
     text-align: end;
@@ -407,6 +433,7 @@ li {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+    border-radius: 10px;
 }
 
 .container-total {
@@ -415,7 +442,4 @@ li {
 
 
 
-/*
-cart-row last???
-לעצב את הכיתוב ברצלונה ולייחד אלמנט כללי בשביל זה 
- */
+ 

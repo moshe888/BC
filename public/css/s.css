@@ -92,8 +92,22 @@ font-size: 10px;
     background-image: url("https://pbs.twimg.com/media/FWf6nzvX0AEnX6T?format=jpg&name=900x900");
     background-size:cover;
 
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     height: 100%;
+        background-repeat: no-repeat;
+        
+
+
+
+}
+.main-header-about {
+   
+    
+    background-image: url("https://store.fcbarcelona.com/medias/Banner-Desktop.jpg?context=bWFzdGVyfHJvb3R8ODU2NTh8aW1hZ2UvanBlZ3xoNDYvaGExLzg5NTI1MTU0NjExNTAvQmFubmVyX0Rlc2t0b3AuanBnfGU4OTMwYTM0N2MyOTE5NDJhNTA5ZDNkMWU4MjU1ZDcxYmYxNDc4M2QxYWQ4ZmM0ZTlhZDM1NmVlNzZmYTkxNTU");
+     background-size:cover;
+
+    margin-bottom: 10rem;
+    height: 350px;
         background-repeat: no-repeat;
         
 
@@ -103,8 +117,18 @@ font-size: 10px;
 @media  (max-width: 800px) {
     .main-header {
     background-size:contain;
-    height: 100%;
+     margin-bottom: 0;
+     height: 100%;
+
+ 
+
+    }
+  }
+  @media  (max-width: 800px) {
+    .main-header-about {
+    background-size:contain;
     margin-bottom: 0;
+ 
 
     }
   }
@@ -165,6 +189,8 @@ font-size: 10px;
     text-align: center;
     font-size: 3em;
     border-bottom: 1px solid black;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+ 
 
 }
 
@@ -176,6 +202,7 @@ video {
 
 
 }
+
 
 .thumbinner {
 
@@ -268,8 +295,7 @@ li {
 }
 
 .game_bord button {
-    background-color: blue;
-    color: ghostwhite;
+     color: rgb(9, 9, 101);
     border-radius: 10px;
 }
 
@@ -442,4 +468,14 @@ li {
 
 
 
- 
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+    font-weight: bold;
+    font-size: 20px;
+}

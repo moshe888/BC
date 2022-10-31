@@ -9,7 +9,11 @@ fc.get('/home', async(req, res, next) => {
 })
 fc.get('/about', async(req, res, next) => {
     res.render("about");
- })
+})
+fc.get('/total', async(req, res, next) => {
+   res.render("total");
+})
+
 
 
 

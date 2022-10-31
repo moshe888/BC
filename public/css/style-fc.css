@@ -413,9 +413,14 @@ li {
     max-width: 700px;
 }
 
-
-
-/*
-cart-row last???
-לעצב את הכיתוב ברצלונה ולייחד אלמנט כללי בשביל זה 
- */
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+    font-weight: bold;
+    font-size: 20px;
+}
